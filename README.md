@@ -5,6 +5,9 @@ We will have a structure to follow to avoid chaos in oor code.
 
 So, please read : 
 https://github.com/airbnb/css
+
+and
+
 https://en.bem.info/methodology/
 
 Cheers!
