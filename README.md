@@ -16,6 +16,7 @@ Cheers!
 It is NOT a final version of styles structure but hope it will help us to start our project.  
 We need to cooperate to make it better. All suggestions are welcome!  
 
+```
 |-- styles  
     |-- common *Common styles and additional stylesheets like Normalize.css*  
     |   |-- common.scss  
@@ -51,3 +52,4 @@ We need to cooperate to make it better. All suggestions are welcome!
             |-- _style  
                 |-- _style_introduction.scss  
                 |-- _style_standard.scss  
+```
