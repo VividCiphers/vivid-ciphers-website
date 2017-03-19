@@ -1,0 +1,27 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css';
+@import 'https://fonts.googleapis.com/css?family=Abel';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600';
+@font-face {
+  font-family: 'Arciform';
+  src:  url('../fonts/Arciform.woff2') format('woff2'),
+        url('../fonts/Arciform.woff') format('woff'),
+        url('../fonts/Arciform.otf') format('otf');
+}
+
+$green: #0aa1a8;
+$black: #1d2728;
+
+body {
+  min-width: 340px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: $black;
+}
+
+a {
+  color: $green;
+}
+
+a:hover {
+  text-decoration: none;
+}

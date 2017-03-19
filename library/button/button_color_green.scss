@@ -1,0 +1,12 @@
+$green: #0aa1a8;
+
+.button_color_green {
+    background-color: $green;
+}
+
+.button_color_green:hover {
+    background-color: #13b4be;
+}
+.button_color_green:active {
+    background-color: $green;
+}
