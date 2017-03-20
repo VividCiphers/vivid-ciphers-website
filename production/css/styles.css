@@ -53,6 +53,16 @@ a:hover {
 .footer__returnlink {
   margin: 60px 0; }
 
+.form__button_registration, .form__link_forgot-password {
+  margin-top: 40px; }
+
+.form__input {
+  margin: 12px 0; }
+
+.form__link_forgot-password {
+  float: right;
+  padding-top: 12px; }
+
 .header__login {
   line-height: 100px;
   margin-right: 60px; }
@@ -68,12 +78,6 @@ a:hover {
   width: 300px;
   padding: 0 20px;
   outline: none; }
-
-.form__button_registration {
-  margin-top: 40px; }
-
-.form__input {
-  margin: 12px 0; }
 
 .logotype {
   font-size: 30px; }
@@ -103,7 +107,10 @@ a:hover {
   text-align: right; }
 
 .paragraph_color_gray {
-  color: #9a9a9a; }
+  color: #d8d8d8; }
+
+.paragraph_color_red {
+  color: #d05f5f; }
 
 .paragraph_style_introduction {
   font-size: 20px; }
