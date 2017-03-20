@@ -34,7 +34,6 @@ a:hover {
 .button_color_green:active {
   background-color: #0aa1a8; }
 
-
 .button_size_m {
   width: 150px; }
 
@@ -51,16 +50,8 @@ a:hover {
 .container__logotype_lineheight {
   line-height: 135px; }
 
-
 .footer__returnlink {
   margin: 60px 0; }
-
-.form__button_registration {
-  margin-top: 40px; }
-
-.form__input {
-  margin: 12px 0; }
-
 
 .header__login {
   line-height: 100px;
@@ -78,6 +69,11 @@ a:hover {
   padding: 0 20px;
   outline: none; }
 
+.form__button_registration {
+  margin-top: 40px; }
+
+.form__input {
+  margin: 12px 0; }
 
 .logotype {
   font-size: 30px; }
