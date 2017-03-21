@@ -14,10 +14,21 @@ gulp.task('fonts', function () {
   .pipe(gulp.dest('./production/fonts'));
 });
 
+gulp.task('grid', function () {
+  return gulp.src('./library/grid/*.*')
+  .pipe(gulp.dest('./production/css'));
+});
+
+gulp.task('html', function () {
+  return gulp.src('./library/html/*.html')
+  .pipe(gulp.dest('./production/'));
+});
+
+
 gulp.task('watch', function () {
   gulp.watch('./library/**/*.scss', ['sass']);
 });
 
-gulp.task('compile', ['sass', 'fonts'], function () {
+gulp.task('compile', ['sass', 'fonts','grid','html'], function () {
     return;
 });

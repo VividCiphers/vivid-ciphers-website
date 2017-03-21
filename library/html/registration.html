@@ -4,30 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <p class="paragraph paragraph_style_standard paragraph_align_right header__login">Already have an account? <a href="#">Log In</a></p>
+  <div class="container container_maxwidth_1140px">
+    <header class="header row col-xs-12 center-xs col-sm-12 end-sm middle-xs">
+      <div class="paragraph">Already have an account? <a href="#">Log In</a></div>
     </header>
-    <div class="container container_width_s">
-      <div class="logotype logotype_align_center container__logotype_lineheight">
+    <div class="container container_maxwidth_340px">
+      <div class="logotype center-xs">
         <span class="logotype logotype_vivid">Vivid</span>
         <span class="logotype logotype_ciphers">Ciphers</span>
         <span class="logotype logotype_tag">/></span>
       </div>
-      <p class="paragraph paragraph_style_introduction paragraph_align_center">Create an account</p>
+      <p class="paragraph paragraph_style_introduction center-xs">Create an account</p>
       <form action="" class="form">
         <input class="input form__input" type="text" placeholder="Login" required>
         <input class="input form__input" type="text" placeholder="Email" required>
         <input class="input form__input" type="text" placeholder="Password" required>
-        <button class="button button_size_m button_color_green form__button_registration">Sign Up</button>
+        <div class="form__button-section">
+          <button class="button button_size_m button_color_green">Sign Up</button>
+        </div>
       </form>
     </div>
     <footer class="footer">
-      <p class="paragraph paragraph_align_center footer__returnlink"><a class="paragraph_color_gray" href="#">Return to previous page</a></p>
+      <div class="paragraph center-xs"><a class="paragraph_color_gray" href="#">Return to previous page</a></div>
     </footer>
   </div>
 </body>
