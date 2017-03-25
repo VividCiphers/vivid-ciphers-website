@@ -18,16 +18,16 @@ a:hover {
   color: #fff;
 }
 
-.hamburger a:first-child {
-  margin-top: 32px;
-}
-
-.hamburger > nav a {
+.hamburger a {
   color: #fff;
   text-decoration: none;
   padding: 10px 0 10px 30px;
 }
 
-.hamburger > nav a:hover {
+.hamburger a:hover {
   background-color: #13b4be;
+}
+
+.hamburger a:first-child {
+  margin-top: 32px;
 }

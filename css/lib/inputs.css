@@ -12,17 +12,3 @@ input {
   height: 45px;
   outline: none;
 }
-
-.hamburger-form input {
-  background-color: #13b4be;
-  color: #fff;
-}
-
-.hamburger-login-button {
-  margin: 10px 0 5px 0;
-}
-
-.hamburger-form input::-webkit-input-placeholder {color: #fff; opacity: .5;}
-.hamburger-form input::-moz-placeholder {color: #fff; opacity: .5;}
-.hamburger-form input:-ms-input-placeholder {color: #fff; opacity: .5;}
-.hamburger-form input:-moz-placeholder {color: #fff; opacity: .5;}

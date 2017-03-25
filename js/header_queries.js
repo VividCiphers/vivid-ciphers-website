@@ -6,13 +6,12 @@
     let links = document.querySelectorAll('.main > a');
     let mq = window.matchMedia("(max-width: 600px)");
     let hamburgerNav = document.querySelector('.hamburger');
-    let hamburgerNavMenu = document.querySelector('.hamburger > nav');
     mq.addListener(alignLeft);
 
     for (let i=0; i<links.length; i++) {
       let clonedNode = links[i].cloneNode(true);
       clonedNode.classList.add('block');
-      hamburgerNavMenu.appendChild(clonedNode);
+      hamburgerNav.appendChild(clonedNode);
     }
 
     let hamburgerIcon = document.createElement('div');
