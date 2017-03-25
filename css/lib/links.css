@@ -1,0 +1,33 @@
+a {
+  color: #0aa1a8;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.a-red {
+  color: #d05f5f;
+}
+
+.a-gray {
+  color: #d8d8d8;
+}
+
+.a-white {
+  color: #fff;
+}
+
+.hamburger a:first-child {
+  margin-top: 32px;
+}
+
+.hamburger > nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0 10px 30px;
+}
+
+.hamburger > nav a:hover {
+  background-color: #13b4be;
+}

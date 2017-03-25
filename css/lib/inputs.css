@@ -1,0 +1,28 @@
+input {
+  padding: 0 20px;
+  margin: 12px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  border: 0;
+  border-radius: 30px;
+  background-color: #e5e5e5;
+  line-height: 45px;
+  width: calc(100% - 40px);
+  height: 45px;
+  outline: none;
+}
+
+.hamburger-form input {
+  background-color: #13b4be;
+  color: #fff;
+}
+
+.hamburger-login-button {
+  margin: 10px 0 5px 0;
+}
+
+.hamburger-form input::-webkit-input-placeholder {color: #fff; opacity: .5;}
+.hamburger-form input::-moz-placeholder {color: #fff; opacity: .5;}
+.hamburger-form input:-ms-input-placeholder {color: #fff; opacity: .5;}
+.hamburger-form input:-moz-placeholder {color: #fff; opacity: .5;}

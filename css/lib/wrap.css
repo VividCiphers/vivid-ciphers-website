@@ -1,0 +1,13 @@
+.wrap-max1140px {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.wrap-max340px {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.wrap-height100px {
+  height: 100px;
+}

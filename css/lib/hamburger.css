@@ -1,0 +1,14 @@
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: -85%;
+  transition: left 0.3s ease;
+  width: 85%;
+  height: 100%;
+  background-color: #0aa1a8;
+}
+
+.transition-left {
+  transition: left 0.3s ease;
+  left: 0;
+}
