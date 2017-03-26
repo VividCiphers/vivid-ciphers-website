@@ -14,5 +14,5 @@ Cheers!
 
 You can test it here:  
 * http://nikitasherbakov.com/v/  
-* http://nikitasherbakov.com/v/reg.html  
-* http://nikitasherbakov.com/v/login.html  
+* http://nikitasherbakov.com/v/reg.php
+* http://nikitasherbakov.com/v/login.php
