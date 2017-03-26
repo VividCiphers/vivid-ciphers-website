@@ -29,6 +29,9 @@
 
     window.addEventListener('resize', function(){
       (window.innerWidth > 600 && hamburgerNav.classList.contains('transition-left')) ? hamburgerNav.classList.toggle('transition-left') : false;
+      let contentSize = Math.max( document.body.scrollHeight, document.body.offsetHeight,
+                         document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+      hamburgerNav.style.height = contentSize + 'px';
     });
 
     function alignLeft(){
@@ -39,8 +42,5 @@
       hamburgerIcon.classList.toggle('disabled');
     };
 
-    let contentSize = Math.max( document.body.scrollHeight, document.body.offsetHeight,
-                       document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-    hamburgerNav.style.height = contentSize + 'px';
 
  }());
