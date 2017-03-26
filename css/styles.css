@@ -8,12 +8,17 @@
 @import 'lib/buttons.css';
 @import 'lib/wrap.css';
 @import 'lib/header.css';
-@import 'lib/header_queries.css';
+@import 'lib/header-queries.css';
 @import 'lib/nav.css';
 @import 'lib/logo.css';
 @import 'lib/auth.css';
 @import 'lib/hamburger.css';
 @import 'lib/forms.css';
+@import 'lib/h.css';
+@import 'lib/text.css';
+@import 'lib/icon-arrow.css';
+@import 'lib/section-1.css';
+@import 'lib/section-2.css';
 
 @font-face {
   font-family: 'Arciform';
@@ -34,6 +39,13 @@ body {
   color: #1d2728;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 20px 0;
+}
+
 .disabled {
   display: none;
 }
@@ -52,4 +64,12 @@ body {
 
 .no-underline {
   text-decoration: none;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.extra-bold {
+  font-weight: 700;
 }

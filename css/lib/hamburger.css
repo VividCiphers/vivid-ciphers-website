@@ -6,6 +6,7 @@
   width: 85%;
   height: 100%;
   background-color: #0aa1a8;
+  z-index: 1;
 }
 
 .transition-left {

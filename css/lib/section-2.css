@@ -1,0 +1,8 @@
+.team {
+  margin: 20px 0;
+}
+
+.team img {
+  height: 100px;
+  cursor: pointer;
+}
