@@ -12,3 +12,9 @@ input {
   height: 45px;
   outline: none;
 }
+
+.input-short30 {
+	max-width: 30%;
+	min-width: 250px;
+  margin: 20px 10px;
+}

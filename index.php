@@ -94,6 +94,16 @@
           </div>
       </div>
     </div>
+    <div class="section-5">
+     <div class="wrap-max1140px row middle-xs">
+       <h2 class="col-xs-12 center-xs">Stay up to date<span class="t-red">_</span></h2>
+       <p class="p-intro col-xs-12 center-xs">Subscribe and keep abreast of our news and new projects.</p>
+       <div class="col-xs-12 center-xs">
+         <input class="input-short30" type="email" placeholder="john@doe.com">
+         <button class="b-green">Subscribe</button>
+       </div>
+     </div>
+    </div>
     <script src="js/header-queries.js"></script>
     <script src="js/arrow-animation.js"></script>
   </body>
