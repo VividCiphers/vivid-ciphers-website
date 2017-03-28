@@ -5,13 +5,14 @@
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   header {
     padding-top: 0;
     margin-bottom: 0;
   }
   .main,
-  .auth {
+  .auth,
+  {
     display: none;
   }
 }

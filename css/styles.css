@@ -19,8 +19,6 @@
 @import 'lib/icon-arrow.css';
 @import 'lib/section-1.css';
 @import 'lib/section-2.css';
-@import 'lib/section-3.css';
-@import 'lib/section-5.css';
 
 @font-face {
   font-family: 'Arciform';
@@ -45,7 +43,7 @@ hr {
   border: none;
   height: 1px;
   background-color: #e5e5e5;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .disabled {

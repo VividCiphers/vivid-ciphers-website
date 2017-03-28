@@ -1,0 +1,77 @@
+
+.table{
+	display:table;
+}
+
+.block {
+	
+	
+}
+.block1{
+	
+	display:inline-block;
+	
+	
+}
+.block2{
+	float:right;
+	display:inline-block;
+	margin-top:50px;
+	
+}
+.send {
+  background-color:#d05f5f;
+  padding: 0 20px;
+  margin: 12px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  border: 0;
+  border-radius: 30px;
+  line-height: 45px;
+  width:150px;
+  height: 45px;
+  outline: none;
+
+
+}
+.message {
+	height:205px;
+}
+.subscribe{
+	background-color:#0aa1aa;
+  padding: 0 20px;
+  margin: 12px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  border: 0;
+  border-radius: 30px;
+  line-height: 45px;
+  width:140px;
+  height: 45px;
+  outline: none;
+}
+.glyphicon {
+	
+	color:white;
+}
+.john{
+	max-width:230px;
+}
+.stay{
+	margin-bottom:50px;
+}
+@media screen and (max-width: 600px) {
+    
+    .block1{
+        display:none;
+    }
+    
+    
+}
+@media screen and (min-width: 600px) {
+	.block {
+		width:50%;
+	}
+}

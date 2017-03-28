@@ -11,3 +11,7 @@
 .wrap-height100px {
   height: 100px;
 }
+.wrap-max420px {
+  max-width:420px;
+  margin: 0 auto;
+}
