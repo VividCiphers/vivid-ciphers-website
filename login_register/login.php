@@ -1,52 +1,53 @@
 <?php
 
-    include("connect.php");
-    include("functions.php");
-    
-    if(logged_in()){
+	include("connect.php");
+	include("functions.php");
+	
+	if(logged_in()){
         
-        header("location:profile.php");
-        exit();
+		header("location: index.php");
+		exit();
         
-    }
+	}
+	
+	$error = "";
 
-    $error = "";
-
-    if(isset($_POST['submit'])){
-        
-        $email = mysqli_real_escape_string($con, $_POST['email']);
-        $password = mysqli_real_escape_string($con, $_POST['password']);
-        $checkBox = isset($_POST['keep']);
-        
-        if(email_exists($email,$con)){
+	if(isset($_POST['submit'])){
+	
+	    $email = mysqli_real_escape_string($con, $_POST['email']);
+	    $password = mysqli_real_escape_string($con, $_POST['password']);
+		$checkBox = isset($_POST['keep']);
+		
+		if(email_exists($email,$con)){
             
-            $result = mysqli_real_escape_string($con, "SELECT password FROM users WHERE email='$email'");
-            $retrievepassword = mysqli_fetch_assoc($result);
-            
-            if(!password_verify($password,$retrievepassword['password'])){
+			$result = mysqli_query($con, "SELECT password FROM vc_users WHERE email='$email'");
+			$retrievepassword = mysqli_fetch_assoc($result);
+			
+			if(!password_verify($password, $retrievepassword['password'])){
                 
-                $error = "Password is incorrect";
+				$error = "Password is incorrect";
                 
-            } else {
+			} else {
                 
-                $_SESSION['email'] = $email;
-                if($checkBox == "on"){
+				$_SESSION['email'] = $email;
+				
+				if($checkBox == "on"){
                     
-                    setcookie("email",$email, time()+3600);
-                    
-                }
-                
-                header("location: profile.php");
-                
-            }
+					setcookie("email",$email, time()+3600);
+				}
+				
+				header("location: index.php");
+			}
+			
+			
+		} else {
             
-        } else {
+			$error = "Email Does not exist";
             
-            $error = "Email doesn't exist";
-            
-        }
-        
-    }
+		}
+		
+	
+	}
 
 ?>
 
@@ -84,14 +85,14 @@
       </div>
       <form method="POST" action="login.php" >
           
-        <input type="text" placeholder="Login" required>
-        <input type="password" placeholder="Password" required>
+        <input type="text" placeholder="Your email" class="inputFields" name="email" required>
+        <input type="password" placeholder="Your password" class="inputFields" name="password" required>
           
         <div class="row middle-xs between-xs wrap-height100px">
           
-            <button class="b-green">
-            Log In
-            </button>
+            <button type="submit" class="b-green" value="Login">Login</button>
+            
+            
             
           <a href="#">Forgot password?</a>
             
@@ -104,4 +105,3 @@
     </div>
   </body>
 </html>
-
