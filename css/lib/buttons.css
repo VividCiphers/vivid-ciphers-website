@@ -25,11 +25,3 @@ button {
 .b-red:hover {
   background-color: #e26868;
 }
-
-.hamburger-button {
-  height: 40px;
-  width: 40px;
-  background: url('../../img/icon-hamburger.png') no-repeat 50% 50%;
-  cursor: pointer;
-  outline: none;
-}

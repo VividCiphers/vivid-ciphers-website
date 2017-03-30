@@ -37,6 +37,7 @@
         </div>
       </header>
       <div class="hamburger">
+        <div class="hamburger-cancel-button"></div>
       </div>
     </div>
     <div class="section-1">

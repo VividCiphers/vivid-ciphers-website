@@ -6,6 +6,7 @@
     let links = document.querySelectorAll('.main > a');
     let mq = window.matchMedia("(max-width: 600px)");
     let hamburgerNav = document.querySelector('.hamburger');
+    let hamburgerCancelNav = document.querySelector('.hamburger-cancel-button');
     mq.addListener(alignLeft);
 
     for (let i=0; i<links.length; i++) {
@@ -21,9 +22,12 @@
     });
     header.appendChild(hamburgerIcon);
 
-    hamburgerIcon.addEventListener('click', function(){
+    hamburgerIcon.addEventListener('click', toggleTransition);
+    hamburgerCancelNav.addEventListener('click', toggleTransition);
+
+    function toggleTransition() {
       hamburgerNav.classList.toggle('transition-left');
-    });
+    }
 
     (window.innerWidth <= 600) ? alignLeft() : false;
 

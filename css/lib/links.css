@@ -5,17 +5,3 @@ a {
 a:hover {
   text-decoration: none;
 }
-
-.hamburger a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 0 10px 30px;
-}
-
-.hamburger a:hover {
-  background-color: #13b4be;
-}
-
-.hamburger a:first-child {
-  margin-top: 32px;
-}
