@@ -16,3 +16,13 @@
 .contact-form {
   margin-top: 40px;
 }
+
+.social-icons a {
+  color: #fff;
+  font-size: 40px;
+}
+
+.social-icons i {
+  padding: 0 5px;
+  cursor: pointer;
+}
