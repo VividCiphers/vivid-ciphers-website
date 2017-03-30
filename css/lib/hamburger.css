@@ -17,24 +17,24 @@
 }
 
 .hamburger-button {
-  height: 40px;
-  width: 40px;
-  background: url('../../img/icon-hamburger.png') no-repeat 50% 50%;
+  text-align: center;
+  font-size: 30px;
   cursor: pointer;
   outline: none;
 }
 
 .hamburger-cancel-button {
-  height: 40px;
-  width: 40px;
-  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
   padding: 20px 0;
-  background: url('../../img/icon-hamburger-white.png') no-repeat 50% 50%;
   opacity: 0.3;
+}
+
+.hamburger-cancel-button i {
   cursor: pointer;
   outline: none;
 }
-
 
 .hamburger a {
   text-align: center;

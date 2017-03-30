@@ -16,7 +16,7 @@
 </head>
   <body>
     <div class="hamburger">
-      <div class="hamburger-cancel-button"></div>
+      <div class="hamburger-cancel-button"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </div>
     <div class="wrap-max1140px">
       <header class="wrap-height100px row middle-xs">

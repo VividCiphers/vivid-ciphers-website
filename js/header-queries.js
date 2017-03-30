@@ -20,6 +20,7 @@
     classArray.forEach(function(el){
       hamburgerIcon.classList.add(el);
     });
+    hamburgerIcon.innerHTML = '<i class="fa fa-bars t-green aria-hidden="true"></i>';
     header.appendChild(hamburgerIcon);
 
     hamburgerIcon.addEventListener('click', toggleTransition);
