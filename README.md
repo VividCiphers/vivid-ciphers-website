@@ -18,4 +18,4 @@ You can test it here:
 * http://nikitasherbakov.com/v/login_register/register.php
 
 
-For security reasons all important back-end files (using php & mysql) will be stored in private repository
+
