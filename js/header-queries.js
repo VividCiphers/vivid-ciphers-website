@@ -27,15 +27,12 @@
 
     function toggleTransition() {
       hamburgerNav.classList.toggle('transition-left');
-    }
+    };
 
     (window.innerWidth <= 600) ? alignLeft() : false;
 
     window.addEventListener('resize', function(){
       (window.innerWidth > 600 && hamburgerNav.classList.contains('transition-left')) ? hamburgerNav.classList.toggle('transition-left') : false;
-      let contentSize = Math.max( document.body.scrollHeight, document.body.offsetHeight,
-                         document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-      hamburgerNav.style.height = contentSize + 'px';
     });
 
     function alignLeft(){

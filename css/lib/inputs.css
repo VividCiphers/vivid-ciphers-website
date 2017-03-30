@@ -1,4 +1,5 @@
-input {
+input,
+textarea {
   padding: 0 20px;
   margin: 12px 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -13,8 +14,17 @@ input {
   outline: none;
 }
 
+textarea {
+  resize: none;
+  height: 200px;
+}
+
 .input-short30 {
 	max-width: 30%;
 	min-width: 150px;
-  margin: 20px 10px;
+}
+
+.input-short70 {
+	max-width: 70%;
+	min-width: 150px;
 }

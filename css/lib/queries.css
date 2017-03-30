@@ -5,6 +5,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .contact-form {
+    margin-top: 0 !important;
+  }
+}
+
 @media (max-width: 600px) {
   header {
     padding-top: 0;

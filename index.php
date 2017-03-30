@@ -14,6 +14,9 @@
   <title>Main - Vivid Ciphers</title>
 </head>
   <body>
+    <div class="hamburger">
+      <div class="hamburger-cancel-button"></div>
+    </div>
     <div class="wrap-max1140px">
       <header class="wrap-height100px row middle-xs">
         <div class="logo col-md-3 col-xs-12 center-xs">
@@ -36,9 +39,6 @@
           <a class="t-red" href="#">Sign Up</a>
         </div>
       </header>
-      <div class="hamburger">
-        <div class="hamburger-cancel-button"></div>
-      </div>
     </div>
     <div class="section-1">
         <div class="bg-1"></div>
@@ -100,10 +100,41 @@
        <h2 class="col-xs-12 center-xs">Stay up to date<span class="t-red">_</span></h2>
        <p class="p-intro col-xs-12 center-xs">Subscribe and keep abreast of our news and new projects.</p>
        <div class="col-xs-12 center-xs">
-         <input class="input-short30" type="email" placeholder="john@doe.com">
+         <input class="input-short30 margin15px" type="email" placeholder="john@doe.com">
          <button class="b-green">Subscribe</button>
        </div>
      </div>
+    </div>
+    <div class="section-6">
+      <div class="bg-contacts"></div>
+      <div class="wrap-max1140px row margin-top20px">
+        <div class="col-sm-6 col-xs-12 margin-top20px">
+          <h2 class="t-white">Contact us<span class="t-red">_</span></h2>
+          <p class="t-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ratione assumenda quos eos, sapiente id maxime qui?
+            Dignissimos praesentium doloremque molestias assumenda quis aspernatur reiciendis,
+            reprehenderit sunt culpa esse hic quisquam.Nihil a quisquam aut
+             optio quae cupiditate dignissimos mollitia aliquid pariatur?</p>
+           <p class="t-white">Dolor neque quisquam tempora laboriosam, ab nulla earum aliquid,
+             rerum quo natus, temporibus, vero provident praesentium consectetur!
+             Corrupti, necessitatibus.</p>
+        </div>
+        <div class="col-sm-6 col-xs-12 contact-form">
+          <form action="">
+            <input class="input-short70" type="email" placeholder="Your Email">
+            <textarea type="text" placeholder="Your text here"></textarea>
+            <div class="row middle-xs between-xs">
+              <button class="b-red">Send</button>
+              <div class="drag-drop">
+                <p class="t-white">
+                  Need to attach a file?<br>
+                  Drag it here.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="js/header-queries.js"></script>
     <script src="js/arrow-animation.js"></script>

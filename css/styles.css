@@ -8,7 +8,7 @@
 @import 'lib/buttons.css';
 @import 'lib/wrap.css';
 @import 'lib/header.css';
-@import 'lib/header-queries.css';
+@import 'lib/queries.css';
 @import 'lib/nav.css';
 @import 'lib/logo.css';
 @import 'lib/auth.css';
@@ -21,6 +21,7 @@
 @import 'lib/section-2.css';
 @import 'lib/section-3.css';
 @import 'lib/section-5.css';
+@import 'lib/section-6.css';
 
 @font-face {
   font-family: 'Arciform';
@@ -74,4 +75,16 @@ hr {
 
 .extra-bold {
   font-weight: 700;
+}
+
+.margin15px {
+  margin: 15px;
+}
+
+.margin-top40px {
+  margin-top: 40px;
+}
+
+.margin-top20px {
+  margin-top: 20px;
 }
