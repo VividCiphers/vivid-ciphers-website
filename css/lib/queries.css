@@ -13,7 +13,8 @@
     height: 68% !important;
   }
   .slider-content {
-    padding-bottom: 0 !important;
+    margin-top: -15px;
+    padding-bottom: 10px !important;
   }
   .slider-dots {
     margin-top: 10px;
