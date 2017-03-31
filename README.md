@@ -13,9 +13,6 @@ Cheers!
 ## Test pages  
 
 You can test it here:  
-* http://nikitasherbakov.com/v/  
+* https://vividciphers.github.io/vivid-ciphers-website/  
 * http://nikitasherbakov.com/v/login_register/login.php
 * http://nikitasherbakov.com/v/login_register/register.php
-
-
-https://vividciphers.github.io/vivid-ciphers-website/

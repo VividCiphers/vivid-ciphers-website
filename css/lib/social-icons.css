@@ -1,0 +1,9 @@
+.social-icons a {
+  font-size: 40px;
+}
+
+.social-icons i {
+  color: #fff;
+  padding: 0 5px;
+  cursor: pointer;
+}

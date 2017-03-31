@@ -21,3 +21,12 @@
   background-color: #0aa1aa;
   transform: skewY(-.7deg) translateY(50%);
 }
+
+.bg-3 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 60%;
+  background-color: #0aa1aa;
+  transform: skewY(-.7deg) translateY(50%);
+}

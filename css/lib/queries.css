@@ -9,6 +9,16 @@
   .contact-form {
     margin-top: 0 !important;
   }
+  .bg-3 {
+    height: 68% !important;
+  }
+  .slider-content {
+    padding-bottom: 0 !important;
+  }
+  .slider-dots {
+    margin-top: 10px;
+    position: inherit !important;
+  }
 }
 
 @media (max-width: 600px) {
