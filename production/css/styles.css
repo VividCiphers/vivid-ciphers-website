@@ -129,11 +129,17 @@ textarea {
 .t-red {
   color: #d05f5f; }
 
+.t-lightred {
+  color: #e26868; }
+
 .t-gray {
   color: #d8d8d8; }
 
 .t-green {
   color: #0aa1a8; }
+
+.t-lightgreen {
+  color: #13b4be; }
 
 .wrap-max1140px {
   max-width: 1140px;
@@ -211,17 +217,17 @@ header {
 .hamburger {
   position: fixed;
   top: 0;
-  left: -100%;
+  top: -100%;
   opacity: 0;
   transition: all 0.3s ease;
   width: 100%;
-  height: 100%;
-  background-color: #0aa1a8;
+  background-color: #39404a;
+  border-bottom: 3px solid #d05f5f;
   z-index: 1; }
 
-.transition-left {
+.transition-top {
   transition: all 0.3s ease;
-  left: 0;
+  top: 0;
   opacity: 1; }
 
 .hamburger-button {
@@ -231,24 +237,39 @@ header {
   outline: none; }
 
 .hamburger-cancel-button {
-  text-align: center;
-  color: #fff;
+  text-align: right;
+  color: #0aa1a8;
   font-size: 30px;
-  padding: 20px 0;
-  opacity: 0.3; }
+  padding-right: 20px;
+  margin: 5px 0; }
 
 .hamburger-cancel-button i {
   cursor: pointer;
   outline: none; }
 
-.hamburger a {
+.hamburger-cancel-button i:hover {
+  color: #13b4be; }
+
+.hamburger-nav {
+  padding-bottom: 10px; }
+
+.hamburger-nav a {
   text-align: center;
   color: #fff;
   text-decoration: none;
   padding: 10px 0; }
 
-.hamburger a:hover {
-  background-color: #13b4be; }
+.hamburger-nav a:hover {
+  overflow: hidden;
+  width: 110%;
+  margin-left: -5%;
+  background-color: #e26868; }
+
+.hamburger-auth a {
+  padding: 0 3px; }
+
+.hamburger-auth:first-child {
+  padding-left: 15px; }
 
 .bg-main, .bg-additional, .bg-additional-slider {
   position: absolute;
