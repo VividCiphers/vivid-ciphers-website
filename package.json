@@ -1,0 +1,21 @@
+{
+  "name": "vivid-ciphers-website",
+  "version": "1.0.0",
+  "description": "Vivid Ciphers Website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-cssimport": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VividCiphers/vivid-ciphers-website"
+  },
+  "author": "Nick Sherbakov",
+  "license": "ISC"
+}

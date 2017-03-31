@@ -1,0 +1,23 @@
+.icon-arrow {
+  margin: 0 auto;
+  width: 50px;
+  height: 40px;
+  background: url('../../img/icon-arrow.png') no-repeat 50% 50%;
+  transform: translateY(0);
+  transition: $animation;
+}
+
+.arrow-animation-step1 {
+  transform: translateY(10px);
+  transition: $animation;
+}
+
+.arrow-animation-step2 {
+  transform: translateY(-5px);
+  transition: $animation;
+}
+
+.arrow-animation-step3 {
+  transform: translateY(5px);
+  transition: $animation;
+}

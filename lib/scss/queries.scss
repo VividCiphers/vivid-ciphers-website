@@ -1,0 +1,37 @@
+@media screen and (max-width: 1024px) {
+  header {
+    padding-top: 20px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 0 !important;
+  }
+  .bg-additional-slider {
+    height: 68% !important;
+  }
+  .slider-content {
+    margin-top: -15px;
+    padding-bottom: 10px !important;
+  }
+  .slider-dots {
+    margin-top: 10px;
+    position: inherit !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .main-nav,
+  .auth {
+    display: none;
+  }
+  .contact-form {
+    margin-top: 0;
+  }
+}
