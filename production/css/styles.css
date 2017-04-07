@@ -183,7 +183,7 @@ textarea {
 
 header {
   padding: 0;
-  margin-bottom: 0; }
+  margin: 0; }
 
 .logo {
   font-size: 30px;
@@ -216,42 +216,22 @@ header {
 
 .hamburger {
   position: fixed;
-  top: 0;
-  top: -100%;
-  opacity: 0;
-  transition: all 0.3s ease;
+  top: -10%;
   width: 100%;
+  height: 40px;
   background-color: #39404a;
-  border-bottom: 3px solid #d05f5f;
-  z-index: 1; }
-
-.transition-top {
   transition: all 0.3s ease;
-  top: 0;
-  opacity: 1; }
-
-.hamburger-button {
-  text-align: center;
-  font-size: 30px;
-  cursor: pointer;
-  outline: none; }
-
-.hamburger-cancel-button {
-  text-align: right;
-  color: #0aa1a8;
-  font-size: 30px;
-  padding-right: 20px;
-  margin: 5px 0; }
-
-.hamburger-cancel-button i {
-  cursor: pointer;
-  outline: none; }
-
-.hamburger-cancel-button i:hover {
-  color: #13b4be; }
+  z-index: 2; }
 
 .hamburger-nav {
-  padding-bottom: 10px; }
+  position: fixed;
+  width: 100%;
+  top: -100%;
+  margin-top: 40px;
+  background-color: #39404a;
+  border-bottom: 3px solid #d05f5f;
+  transition: all 0.3s ease;
+  z-index: 1; }
 
 .hamburger-nav a {
   text-align: center;
@@ -265,11 +245,27 @@ header {
   margin-left: -5%;
   background-color: #e26868; }
 
+.transition-top {
+  transition: all 0.3s ease;
+  top: 0; }
+
+.hamburger-button {
+  color: #0aa1a8;
+  font-size: 30px;
+  text-align: right; }
+
+.hamburger-button i {
+  cursor: pointer;
+  outline: none; }
+
+.hamburger-button i:hover {
+  color: #13b4be; }
+
 .hamburger-auth a {
   padding: 0 3px; }
 
 .hamburger-auth:first-child {
-  padding-left: 15px; }
+  padding-left: 5px; }
 
 .bg-main, .bg-additional, .bg-additional-slider {
   position: absolute;
@@ -393,7 +389,11 @@ footer {
 @media screen and (max-width: 600px) {
   header {
     padding-top: 0;
+    margin-top: 45px;
+    transition: all 0.3s ease;
     margin-bottom: 0; }
+  .hamburger {
+    top: 0; }
   .main-nav,
   .auth {
     display: none; }

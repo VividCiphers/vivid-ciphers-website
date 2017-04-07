@@ -6,9 +6,11 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
-    "gulp-cssimport": "^5.0.0"
+    "gulp-cssimport": "^5.0.0",
+    "browser-sync": "^2.18.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

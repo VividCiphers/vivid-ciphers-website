@@ -25,7 +25,12 @@
 @media screen and (max-width: 600px) {
   header {
     padding-top: 0;
+    margin-top: 45px;
+    transition: $animation;
     margin-bottom: 0;
+  }
+  .hamburger {
+    top: 0;
   }
   .main-nav,
   .auth {

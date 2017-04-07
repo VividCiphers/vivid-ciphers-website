@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var browserSync = require('browser-sync').create();
 var cssimport = require('gulp-cssimport');
 var options = {
     matchPattern: '*.scss'
@@ -9,7 +10,8 @@ gulp.task('import', function() {
   gulp.src('./lib/scss/styles.scss')
     .pipe(cssimport(options))
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./production/css'));
+    .pipe(gulp.dest('./production/css'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('html', function () {
@@ -39,4 +41,16 @@ gulp.task('js', function () {
 
 gulp.task('default', ['import', 'html', 'grid', 'fonts', 'img', 'js'], function () {
   return;
+});
+
+
+gulp.task('serve', ['import', 'html'], function() {
+
+    browserSync.init({
+        server: "./production"
+    });
+
+    gulp.watch("lib/scss/**/*.*", ['import']);
+    gulp.watch("lib/js/**/*.*", ['js']);
+    gulp.watch("lib/html/*.html", ['html']).on('change', browserSync.reload);
 });

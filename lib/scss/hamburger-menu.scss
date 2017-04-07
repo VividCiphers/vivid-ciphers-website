@@ -1,47 +1,22 @@
 .hamburger {
   position: fixed;
-  top: 0;
-  top: -100%;
-  opacity: 0;
-  transition: $animation;
+  top: -10%;
   width: 100%;
+  height: 40px;
   background-color: #39404a;
-  border-bottom: 3px solid $red;
-  z-index: 1;
-}
-
-.transition-top {
   transition: $animation;
-  top: 0;
-  opacity: 1;
-}
-
-.hamburger-button {
-  text-align: center;
-  font-size: 30px;
-  cursor: pointer;
-  outline: none;
-}
-
-.hamburger-cancel-button {
-  text-align: right;
-  color: $green;
-  font-size: 30px;
-  padding-right: 20px;
-  margin: 5px 0;
-}
-
-.hamburger-cancel-button i {
-  cursor: pointer;
-  outline: none;
-}
-
-.hamburger-cancel-button i:hover {
-  color: $light-green;
+  z-index: 2;
 }
 
 .hamburger-nav {
-  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  top: -100%;
+  margin-top: 40px;
+  background-color: #39404a;
+  border-bottom: 3px solid $red;
+  transition: $animation;
+  z-index: 1;
 }
 
 .hamburger-nav a {
@@ -58,10 +33,30 @@
   background-color: $light-red;
 }
 
+.transition-top {
+  transition: $animation;
+  top: 0;
+}
+
+.hamburger-button {
+  color: $green;
+  font-size: 30px;
+  text-align: right;
+}
+
+.hamburger-button i {
+  cursor: pointer;
+  outline: none;
+}
+
+.hamburger-button i:hover {
+  color: $light-green;
+}
+
 .hamburger-auth a {
   padding: 0 3px;
 }
 
 .hamburger-auth:first-child {
-  padding-left: 15px;
+  padding-left: 5px;
 }
