@@ -10,22 +10,30 @@
 }
 
 .slider-content {
-  position: relative;
   padding-bottom: 60px;
+  text-align: justify;
 }
 
 .slider-dots {
   position: absolute;
   bottom: 0;
+  left: 0;
   padding: 5px 0;
   color: $gray;
 }
 
 .slider-dots i {
-  margin: 0 3px;
-  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  width: 20px;
+  height: 25px;
 }
 
-.active {
-  color: $red;
+.slider-buttons {
+  margin-top: 30px;
+}
+
+.disapear {
+  opacity: 0 !important;
+  transition: $animation;
 }

@@ -1,13 +1,7 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   header {
     padding-top: 20px;
     margin-bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  footer {
-    margin-top: 0 !important;
   }
   .bg-additional-slider {
     height: 68% !important;
@@ -19,6 +13,18 @@
   .slider-dots {
     margin-top: 10px;
     position: inherit !important;
+  }
+  .slider-text {
+    display: none;
+  }
+  .slider-content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 0 !important;
   }
 }
 
@@ -38,5 +44,11 @@
   }
   .contact-form {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slider-content > h3 {
+    display: none;
   }
 }
