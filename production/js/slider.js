@@ -4,7 +4,7 @@
   const slides = [
       {
           "id": 1,
-          "pic": "/img/project-slide-1.png",
+          "pic": "img/project-slide-1.png",
           "header": "Slide 1",
           "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo. Lorem ipsum dolor sit amet, Ladipisicing elit, incididunt ut labore et dolore magna aliqua. Ladipisicing elit.</p><p>Lorem ipsum dolor sit amet, sed do. Ladipisicing elit.</p>",
           "watch": "#",
@@ -12,7 +12,7 @@
       },
       {
           "id": 2,
-          "pic": "/img/project-slide-2.png",
+          "pic": "img/project-slide-2.png",
           "header": "Slide 2",
           "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>",
           "watch": "#",
@@ -20,7 +20,7 @@
       },
       {
           "id": 3,
-          "pic": "/img/project-slide-3.png",
+          "pic": "img/project-slide-3.png",
           "header": "Slide 3",
           "content": "<p>Lorem ipsum dolor sit amet.</p>",
           "watch": "#",
