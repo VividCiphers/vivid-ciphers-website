@@ -336,11 +336,11 @@ header {
 .slider-text,
 .slider-buttons {
   opacity: 1;
-  transition: opacity 0.5s linear; }
+  transition: opacity 0.8s linear; }
 
 .disapear {
   opacity: 0 !important;
-  transition: opacity 0.5s linear; }
+  transition: opacity 0.8s linear; }
 
 .subscription {
   margin-bottom: 15px; }

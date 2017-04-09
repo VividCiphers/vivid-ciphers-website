@@ -32,13 +32,13 @@
   var sliderDots = document.querySelector('.slider-dots');
   var sliderButtons = document.querySelector('.slider-buttons');
   var slideNumber = 0;
-  var delay = 3000;
+  var delay = 5000;
 
   setInterval(function () {
     setTimeout(function () {
       slider();
       disapear();
-    }, 300);
+    }, 800);
     disapear();
   }, delay);
 
