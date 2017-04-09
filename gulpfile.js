@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var babel = require('gulp-babel');
 var browserSync = require('browser-sync').create();
 var cssimport = require('gulp-cssimport');
 var options = {
@@ -36,6 +37,7 @@ gulp.task('img', function () {
 
 gulp.task('js', function () {
   return gulp.src('./lib/js/*.*')
+  .pipe(babel({presets: ['es2015']}))
   .pipe(gulp.dest('./production/js'));
 });
 

@@ -7,18 +7,20 @@
     height: 68% !important;
   }
   .slider-content {
-    margin-top: -15px;
+    text-align: center;
     padding-bottom: 10px !important;
   }
   .slider-dots {
-    margin-top: 10px;
     position: inherit !important;
   }
   .slider-text {
     display: none;
   }
-  .slider-content {
-    text-align: center;
+  .slider-buttons {
+    display: none;
+  }
+  .slider-content > h3 {
+    margin: 15px 0 10px 0;
   }
 }
 
@@ -48,7 +50,11 @@
 }
 
 @media screen and (max-width: 450px) {
+  .slider-content {
+    padding-bottom: 0 !important;
+  }
   .slider-content > h3 {
-    display: none;
+    margin: 10px 0 5px 0;
+    font-size: 20px;
   }
 }

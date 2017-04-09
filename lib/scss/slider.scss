@@ -33,7 +33,15 @@
   margin-top: 30px;
 }
 
+.slider-pic img,
+.slider-content > h3,
+.slider-text,
+.slider-buttons {
+  opacity: 1;
+  transition: $animation-linear;
+}
+
 .disapear {
   opacity: 0 !important;
-  transition: $animation;
+  transition: $animation-linear;
 }

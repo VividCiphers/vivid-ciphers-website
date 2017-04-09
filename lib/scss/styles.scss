@@ -5,7 +5,8 @@ $light-green: #13b4be;
 $gray: #d8d8d8;
 $red: #d05f5f;
 $light-red: #e26868;
-$animation: all 0.3s ease;
+$animation: all .3s ease;
+$animation-linear: opacity .5s linear;
 
 // Additional fonts
 @import 'https://fonts.googleapis.com/css?family=Abel';
