@@ -29,21 +29,21 @@
           </a>
         </div>
         <nav class="main-nav col-md-offset-1 col-xs-9 center-xs">
-          <a href="#introduction">About</a>
-          <a href="#skillset">Skills</a>
-          <a href="#team">Team</a>
-          <a href="http://vividciphers.com/projects">Showcase</a>
-          <a href="#contact">Contact</a>
-          <a href="http://vividciphers.com/blog">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Team</a>
+          <a href="#">Showcase</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
         </nav>
         <div class="auth col-md-2 end-md col-xs-3 start-xs">
-          <a href="http://vividciphers.com/login">Log In</a>
-          <a class="t-red" href="http://vividciphers.com/register">Sign Up</a>
+          <a href="#">Log In</a>
+          <a class="t-red" href="#">Sign Up</a>
         </div>
       </header>
     </div>
     <main>
-      <div class="introduction" id="introduction">
+      <div class="introduction">
           <div class="bg-main"></div>
           <div class="bg-additional"></div>
         <div class="wrap-max1140px row middle-xs">
@@ -57,7 +57,7 @@
         </div>
         <div class="icon-arrow"></div>
       </div>
-      <div class="team" id="team">
+      <div class="team">
         <div class="wrap-max1140px row middle-xs">
           <h2 class="col-xs-12 center-xs">Team<span class='t-red'>_</span></h2>
           <p class="p-intro col-xs-12 center-xs">Get to know our developers and what they do by meeting our team.</p>
@@ -82,11 +82,18 @@
               <img class="userpic" src="img/team/amrit.png" alt="Amrit Pandey">
               <img class="userpic" src="img/team/shankster.png" alt="Shankster">
               <img class="userpic" src="img/team/david.png" alt="David Rivera">
+
+              <hr style="background-color: #40E0D0;" />
+
+
+              <p style="font-size:30px"><span>Admins</span><span class='t-teal'>_</span></p>
+
               <img class="userpic" src="img/team/Ryan2.png" alt="Fizen(Ryan)">
               <img class="userpic" src="img/team/thinsoldier.png" alt="Thinsoldier">
               <img class="userpic" src="img/team/Ray2.png" alt="Ray">
 
-              <hr style="background-color: #40E0D0;" />
+              <hr style="background-color: #008080;" />
+
 
               <p style="font-size:30px"><span>Developers</span><span class='t-turquoise'>_</span></p>
 
@@ -99,15 +106,12 @@
               <img class="userpic" src="img/team/lope.png" alt="Lope">
               <img class="userpic" src="img/team/app.png" alt="App">
               <img class="userpic" src="img/team/app2.png" alt="App2">
-              <img class="userpic" src="img/team/app.png" alt="App">
-              <img class="userpic" src="img/team/app2.png" alt="App2">
-              <img class="userpic" src="img/team/app.png" alt="App">
-              <img class="userpic" src="img/team/app2.png" alt="App2">
+              <img class="userpic" src="img/icon-teammate.png" alt="Teammate 18">
             </div>
         </div>
       </div>
       <hr style="background-color:#d05f5f">
-      <div class="skillset" id="skillset">
+      <div class="skillset">
         <div class="wrap-max1140px row middle-xs">
           <h2 class="col-xs-12 center-xs">Skill set<span class='t-red'>_</span></h2>
           <p class="p-intro col-xs-12 center-xs">We have a variety of skills along its levels, we go from zero to hero.</p>
@@ -138,10 +142,6 @@
               <img src="img/icon-php.png" alt="Php icon">
               <img src="img/addskills/mysql-icon.png" alt="MySQL icon">
               <img src="img/addskills/api.png" alt="Api icon">
-              <img src="img/addskills/csharp.png" alt="Csharp icon">
-              <img src="img/addskills/cplus.png" alt="Cplus icon">
-              <img src="img/addskills/ruby.png" alt="Ruby icon">
-              <img style="width:150px; height:130px;" src="img/addskills/python.png" alt="Python icon">
 
               <hr style="background-color: #40E0D0;" />
 
@@ -154,20 +154,36 @@
 
               <hr style="background-color: #00BFFF;" />
 
+              <p style="font-size:30px"><span>Skills In Training</span><span class='t-sky'>_</span></p>
+
+              <img src="img/addskills/csharp.png" alt="Csharp icon">
+              <img src="img/addskills/cplus.png" alt="Cplus icon">
+              <img src="img/addskills/ruby.png" alt="Ruby icon">
+              <img style="width:150px; height:130px;" src="img/addskills/python.png" alt="Python icon">
+
+              <hr style="background-color: #008080;" />
+
               <p style="font-size:30px"><span>Frameworks</span><span class='t-sky'>_</span></p>
 
               <img src="img/addskills/phpstorm.png" alt="PHPStorm icon">
               <img src="img/addskills/webstorm.png" alt="WebStorm icon">
-              <img src="img/addskills/py.png" alt="Python framework icon">
-              <img src="img/addskills/clion.png" alt="Clion icon">
               <img src="img/addskills/react.png" alt="React icon">
               <img style="width:120px; height:130px;" src="img/addskills/node.png" alt="Node js icon">
               <img style="width:180px; height:140px;margin-top:20px;"src="img/addskills/phalcon.png" alt="Phalcon icon">
+              <img src="img/addskills/ci.png" alt="CodeIgniter icon">
               <img style="width:150px; height:150px;" src="img/addskills/laravel.png" alt="Laravel icon">
-              <img style="width:150px; height:100px;" src="img/addskills/zend.png" alt="Zend icon">
+              <img style="width:150px; height:150px;" src="img/addskills/atom.png" alt="Atom icon">
               <img style="width:150px; height:150px;" src="img/addskills/angular.png" alt="Angular icon">
 
               <hr style="background-color: #00BFFF;" />
+
+
+              <p style="font-size:30px"><span>Frameworks In Training</span><span class='t-red'>_</span></p>
+
+              <img src="img/addskills/py.png" alt="Python framework icon">
+              <img src="img/addskills/clion.png" alt="Clion icon">
+              <img style="width:150px; height:100px;" src="img/addskills/zend.png" alt="Zend icon">
+
 
             </div>
         </div>
@@ -206,14 +222,18 @@
       </div>
     </main>
     <footer>
-      <div class="bg-contacts" id="contact"></div>
+      <div class="bg-contacts"></div>
       <div class="wrap-max1140px row margin-top20px">
         <div class="col-sm-6 col-xs-12 margin-top20px">
           <h2 class="t-white">Contact us<span class="t-red">_</span></h2>
-          <p class="t-white">We are here to answer any questions you might have about our team, projects , skills.
-          Reach out to us and leave a message if you're interested in more info about us and we'll respond as soon as we can!</p>
-           <p class="t-white">If you would like to wok with us, to practice your web development skills, let us know and we'll be happy to help!<br />
-           If you're interested in being taught web development from scratch and always had a passion for it - leave us a message and we'll be happy to have you in the team!</p>
+          <p class="t-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ratione assumenda quos eos, sapiente id maxime qui?
+            Dignissimos praesentium doloremque molestias assumenda quis aspernatur reiciendis,
+            reprehenderit sunt culpa esse hic quisquam. Nihil a quisquam aut
+             optio quae cupiditate dignissimos mollitia aliquid pariatur?</p>
+           <p class="t-white">Dolor neque quisquam tempora laboriosam, ab nulla earum aliquid,
+             rerum quo natus, temporibus, vero provident praesentium consectetur!
+             Corrupti, necessitatibus.</p>
              <div class="social-icons">
                <a href="https://github.com/VividCiphers"><i class="fa fa-github" aria-hidden="true"></i></a>
                <a href="mailto:vividciphers@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
