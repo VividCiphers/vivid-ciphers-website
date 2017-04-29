@@ -389,6 +389,41 @@ footer {
 .active {
   color: #d05f5f; }
 
+
+/*==================OVERRIDE-Amrit-feature-branch==================*/
+
+.headline-text{
+  font-size: 3.7rem;
+  margin:30px 0 0 0;
+  letter-spacing: -2px;
+  font-weight: lighter;
+}
+.brand{
+  font-weight: bolder;
+  letter-spacing: -2px;
+}
+.p-intro{
+  margin:0;
+  line-height: 2;
+  font-weight: bold;
+}
+.p-intro .b-red{
+  margin: 15px 0 10px 0;
+}
+.moto{
+  font-size: 2.3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.nav a:hover{
+  transition: all 0.3s ease-in-out;
+}
+
+
+/*==================OVERRIDE-Amrit-feature-branch<OVER>==================*/
+
+
+
 @media screen and (max-width: 1023px) {
   header {
     padding-top: 20px;
@@ -409,7 +444,8 @@ footer {
 
 @media screen and (max-width: 767px) {
   footer {
-    margin-top: 0 !important; } }
+    margin-top: 0 !important; }
+}
 
 @media screen and (max-width: 600px) {
   header {
@@ -417,6 +453,20 @@ footer {
     margin-top: 45px;
     transition: all 0.3s ease;
     margin-bottom: 0; }
+    .p-intro{
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    .p-intro .b-red{
+      font-size: 0.9em;
+    }
+    .headline-text{
+      font-size: 2.3rem;
+    }
+    .moto{
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
   .hamburger {
     top: 0; }
   .main-nav,
