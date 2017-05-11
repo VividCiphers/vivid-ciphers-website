@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Getting started
+
+- Open your terminal as administrator.
+- Run `npm install -g angular-cli`
+- Fork the repo
+- Navigate to where you'd like to store the local version of the project on your computer (e.g desktop) via the terminal
+- Run `git clone` + the url of the repo that was created on your account as a result of forking the main project. 
+- Navigate to the project directory that has just been created ( should be ./vivid-ciphers-website) via terminal
+- Run `git checkout rework`
+- Run `npm install`
+
+TODO: Add more instructions as `ng serve` is throwing "You have to be inside an angular-cli project in order to use the serve command." error.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
