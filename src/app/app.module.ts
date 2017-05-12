@@ -19,11 +19,11 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 
-// const routes: Routes = [
-//   {path:'', redirectTo:'home', pathMatch:'full'},
-//   {path:'home', component: HomePageComponent},
-//   {path:'about', component: AboutPageComponent}
-// ];
+const routes: Routes = [
+  {path:'', redirectTo:'home', pathMatch:'full'},
+  {path:'home', component: HomePageComponent},
+  {path:'about', component: AboutPageComponent}
+];
 
 @NgModule({
   declarations: [
@@ -46,7 +46,7 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    // RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
