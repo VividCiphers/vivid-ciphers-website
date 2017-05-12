@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-newsletter-subscribe',
+  selector: 'newsletter-subscribe',
   templateUrl: './newsletter-subscribe.component.html',
   styleUrls: ['./newsletter-subscribe.component.css']
 })
