@@ -18,6 +18,7 @@ import { ContactFormComponent } from './home-page/contact-form/contact-form.comp
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
+import { SignupPageComponent } from './signup-page/signup-page.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -40,7 +41,8 @@ const routes: Routes = [
     ContactFormComponent,
     HomePageComponent,
     AboutPageComponent,
-    SkillsPageComponent
+    SkillsPageComponent,
+    SignupPageComponent
   ],
   imports: [
     BrowserModule,
