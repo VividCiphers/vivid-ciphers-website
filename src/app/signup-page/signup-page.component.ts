@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-signup-page',
@@ -6,6 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup-page.component.css']
 })
 export class SignupPageComponent implements OnInit {
+
+  // Eventually this will be a new instance of the user model.
+  // newUser: User = new User();
+  newUser = {};
+
+  onSubmit(form: NgForm) {
+    console.log(this.newUser);
+  }
 
   constructor() { }
 

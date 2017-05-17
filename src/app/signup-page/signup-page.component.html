@@ -1,3 +1,69 @@
-<p>
-  signup-page works!
-</p>
+<div class="wrap-max1140px">
+  <header class='wrap-height100px row middle-xs end-sm center-xs'>
+    <div class='col-xs-12' >Already have an account? <a href="#">Log In</a></div>
+  </header>
+</div>
+<div class="wrap-max340px">
+  <div class="row center-xs">
+    <div class="logo">
+      <span class="vivid">Vivid</span>
+      <span class="ciphers">Ciphers</span>
+      <span class="tag">/></span>
+    </div>
+  </div>
+  <div class="row center-xs">
+      <p class="p-intro">Create an account</p>
+  </div>
+  <form
+    (ngSubmit)="onSubmit(signUpForm)"
+    #signUpForm="ngForm">
+      <input
+        type="text"
+        style="text-align: center"
+        placeholder="Nickname"
+        name="login"
+        ngNativeValidate
+        [(ngModel)] = "newUser.login"
+        required>
+      <input
+        type="email"
+        style="text-align: center"
+        placeholder="Email"
+        name="email"
+        ngNativeValidate
+        [(ngModel)] = "newUser.email"
+        required
+        email>
+      <input
+        type="password"
+        style="text-align: center"
+        placeholder="Password"
+        name="password"
+        minlength="8"
+        ngNativeValidate
+        [(ngModel)] = "newUser.password"
+        required
+        password>
+      <input
+        type="password"
+        style="text-align: center"
+        placeholder="Password Confirm"
+        name="passwordConfirm"
+        minlength="8"
+        ngNativeValidate
+        [(ngModel)] = "newUser.passwordConfirm"
+        required
+        password>
+    <div class="row middle-xs between-xs wrap-height100px">
+      <button
+        class="b-green"
+        type="submit"
+        [disabled]="signUpForm.invalid">
+          Sign Up
+      </button>
+    </div>
+  </form>
+  <footer class="wrap-height100px row middle-xs center-xs">
+    <a class="t-gray" href="#">Return to previous page</a>
+  </footer>
+</div>

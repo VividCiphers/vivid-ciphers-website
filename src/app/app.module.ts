@@ -23,7 +23,8 @@ import { SignupPageComponent } from './signup-page/signup-page.component';
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component: HomePageComponent},
-  {path:'about', component: AboutPageComponent}
+  {path:'about', component: AboutPageComponent},
+  {path:'register', component: SignupPageComponent}
 ];
 
 @NgModule({
