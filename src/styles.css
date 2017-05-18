@@ -64,7 +64,7 @@ p {
 .p-intro {
   font-size: 20px;
   line-height: 1.5;
-  margin-top: -20px; }
+  margin-top: -5px; }
 
 a {
   color: #0aa1a8;
@@ -90,6 +90,10 @@ button {
 .b-green:hover {
   background-color: #13b4be; }
 
+.b-green:disabled {
+  background-color: #999; 
+  cursor: not-allowed; }
+
 .b-red,
 .b-red:active {
   background-color: #d05f5f; }
@@ -111,6 +115,11 @@ textarea {
   background-color: #d8d8d8;
   line-height: 45px;
   outline: none; }
+
+  /* Change invalid form inputs to red. */
+  input.ng-invalid.ng-touched {
+    background-color: #e8c9c9;
+  }
 
 textarea {
   resize: none;
