@@ -18,12 +18,15 @@ import { ContactFormComponent } from './home-page/contact-form/contact-form.comp
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
+import { ForgotPasswordPageComponent } from './forgot-password-page/forgot-password-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component: HomePageComponent},
   {path:'about', component: AboutPageComponent},
+  {path:'password-reset', component: ForgotPasswordPageComponent}
   {path:'register', component: SignupPageComponent}
 ];
 
@@ -43,6 +46,7 @@ const routes: Routes = [
     HomePageComponent,
     AboutPageComponent,
     SkillsPageComponent,
+    ForgotPasswordPageComponent
     SignupPageComponent
   ],
   imports: [
