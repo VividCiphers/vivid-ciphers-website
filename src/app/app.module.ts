@@ -18,11 +18,13 @@ import { ContactFormComponent } from './home-page/contact-form/contact-form.comp
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
+import { SignupPageComponent } from './signup-page/signup-page.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component: HomePageComponent},
-  {path:'about', component: AboutPageComponent}
+  {path:'about', component: AboutPageComponent},
+  {path:'register', component: SignupPageComponent}
 ];
 
 @NgModule({
@@ -40,7 +42,8 @@ const routes: Routes = [
     ContactFormComponent,
     HomePageComponent,
     AboutPageComponent,
-    SkillsPageComponent
+    SkillsPageComponent,
+    SignupPageComponent
   ],
   imports: [
     BrowserModule,
