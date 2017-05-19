@@ -13,7 +13,7 @@ export class SignupPageComponent implements OnInit {
   // newUser: User = new User();
   newUser = {};
 
-  onSubmit(form: NgForm) {
+  onSubmit() {
     console.log(this.newUser);
   }
 

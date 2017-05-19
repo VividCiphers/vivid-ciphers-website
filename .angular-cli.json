@@ -22,7 +22,7 @@
         "styles.css",
         "assets/grid/flexboxgrid.css"
       ],
-      "scripts": ["assets/scripts/arrow-animation.js"],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
