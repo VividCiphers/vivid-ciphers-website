@@ -26,7 +26,7 @@ const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component: HomePageComponent},
   {path:'about', component: AboutPageComponent},
-  {path:'password-reset', component: ForgotPasswordPageComponent}
+  {path:'password-reset', component: ForgotPasswordPageComponent},
   {path:'register', component: SignupPageComponent}
 ];
 
@@ -46,7 +46,7 @@ const routes: Routes = [
     HomePageComponent,
     AboutPageComponent,
     SkillsPageComponent,
-    ForgotPasswordPageComponent
+    ForgotPasswordPageComponent,
     SignupPageComponent
   ],
   imports: [
