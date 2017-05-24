@@ -34,8 +34,10 @@
   var slideNumber = 0;
   var delay = 5000;
 
-  setInterval(function () {
+
+  setInterval(() => {
     setTimeout(function () {
+      
       slider();
       disapear();
     }, 800);
