@@ -20,6 +20,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { ForgotPasswordPageComponent } from './forgot-password-page/forgot-password-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+import { UserService } from "app/shared/user.service";
 
 
 const routes: Routes = [
@@ -55,7 +56,7 @@ const routes: Routes = [
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
