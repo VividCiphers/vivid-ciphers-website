@@ -21,6 +21,7 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { ForgotPasswordPageComponent } from './forgot-password-page/forgot-password-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { UserService } from "app/shared/user.service";
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 const routes: Routes = [
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path:'home', component: HomePageComponent},
   {path:'about', component: AboutPageComponent},
   {path:'password-reset', component: ForgotPasswordPageComponent},
-  {path:'register', component: SignupPageComponent}
+  {path:'register', component: SignupPageComponent},
+  {path:'login', component: LoginPageComponent}
 ];
 
 @NgModule({
@@ -48,7 +50,8 @@ const routes: Routes = [
     AboutPageComponent,
     SkillsPageComponent,
     ForgotPasswordPageComponent,
-    SignupPageComponent
+    SignupPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
