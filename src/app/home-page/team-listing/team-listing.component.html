@@ -1,3 +1,5 @@
-<p>
-  team-listing works!
-</p>
+<div *ngIf="users" >
+    <div *ngFor="let user of users">
+ <img *ngIf="user.profile && user.profile.image_path" class="userpic" src="../../assets/img/team/{{user.profile?.image_path}}" alt="{{user.profile?.first_name}}">
+    </div>
+</div>

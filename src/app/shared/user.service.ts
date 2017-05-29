@@ -1,23 +1,25 @@
 import { Injectable, OnInit } from '@angular/core';
 import { User } from './models/user.model';
+import { Http } from "@angular/http";
+import 'rxjs/add/operator/map';
+import { AppSettings } from "app/shared/AppSettings";
 
 @Injectable()
 export class UserService implements OnInit{
   users: User[];
 
-  constructor() { 
-    this.users = [
-      new User(1, 'test@test.com', 'ryan', 'g', '', '', '', '', '', 1)
-    ]
+  constructor(private http: Http) { 
 
-  }
+}
 
   getUsers() { 
-    return this.users;
+    return this.http.get(`${AppSettings.API_ENDPOINT}/users`)
+        .map(response => response.json())
+        .map(response => response.users);
   }
 
   ngOnInit(): void {
-    throw new Error("Method not implemented.");
+    
   }
 
 }

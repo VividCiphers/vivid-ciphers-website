@@ -4,7 +4,7 @@ We can use this for development, but eventually these functions are going to
 need to be rewritten as asynchronous with error handling.
 */
 import { Injectable } from '@angular/core';
-import { Project } from './project.model';
+import { Project } from "app/shared/models/project.model";
 
 @Injectable()
 export class ProjectsService {
