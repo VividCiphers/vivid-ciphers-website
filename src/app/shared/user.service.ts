@@ -6,20 +6,36 @@ import { AppSettings } from "app/shared/AppSettings";
 
 @Injectable()
 export class UserService implements OnInit{
-  users: User[];
+  private users: User[] = [];
 
-  constructor(private http: Http) { 
+  constructor(private http: Http) { }
 
-}
-
-  getUsers() { 
+  getUsersFromAPI() {
     return this.http.get(`${AppSettings.API_ENDPOINT}/users`)
-        .map(response => response.json())
-        .map(response => response.users);
+      .map(response => response.json())
+      .map(response => response.users);
+  }
+
+  getAllUsers() {
+    return this.users;
+  }
+
+  getUser() {
+
+  }
+
+  createUser(userData: {}) {
+    const newUser = new User(userData);
+    this.users.push(newUser);
+    return newUser;
+  }
+
+  updateUser() {
+
   }
 
   ngOnInit(): void {
-    
+
   }
 
 }
