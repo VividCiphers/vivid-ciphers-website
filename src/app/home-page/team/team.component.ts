@@ -12,13 +12,6 @@ export class TeamComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.userService.getUsersFromAPI()
-      .subscribe((users) =>  {
-        users.forEach((user) => {
-          this.userService.createUser(user);
-        });
-      });
     this.users = this.userService.getAllUsers();
   }
-
 }

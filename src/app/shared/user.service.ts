@@ -17,6 +17,12 @@ export class UserService implements OnInit{
   }
 
   getAllUsers() {
+    this.getUsersFromAPI()
+      .subscribe((users) =>  {
+        users.forEach((user) => {
+          this.createUser(user);
+        });
+      });
     return this.users;
   }
 
