@@ -176,20 +176,27 @@ textarea {
   width: 50px;
   height: 40px;
   background: url("./assets/img/icon-arrow.png") no-repeat 50% 50%;
-  transform: translateY(0);
-  transition: all 0.3s ease; }
+  animation: arrow-animation 3.5s 3s infinite;
+   }
 
-.arrow-animation-step1 {
-  transform: translateY(10px);
-  transition: all 0.3s ease; }
 
-.arrow-animation-step2 {
-  transform: translateY(-5px);
-  transition: all 0.3s ease; }
-
-.arrow-animation-step3 {
-  transform: translateY(5px);
-  transition: all 0.3s ease; }
+  @keyframes arrow-animation {
+    0%{ 
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(10px);
+    }
+    20% {
+      transform: translateY(-5px);
+    }
+    30% {
+      transform: translateY(5px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+  }
 
 header {
   padding: 0;
