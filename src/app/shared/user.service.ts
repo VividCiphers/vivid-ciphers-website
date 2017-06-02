@@ -1,11 +1,13 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { User } from './models/user.model';
-import { Http } from "@angular/http";
+import { Http, Response } from "@angular/http";
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import { AppSettings } from "app/shared/AppSettings";
+import 'rxjs/Rx';
 
 @Injectable()
-export class UserService implements OnInit{
+export class UserService {
   private users: User[] = [];
 
   constructor(private http: Http) { }
@@ -30,18 +32,37 @@ export class UserService implements OnInit{
 
   }
 
-  createUser(userData: {}) {
-    const newUser = new User(userData);
-    this.users.push(newUser);
-    return newUser;
+  createUser(userData) {
+    const { email, password } = userData;
+    const newUser = {
+      email,
+      password,
+    }
+    return this.http.post(`${AppSettings.API_ENDPOINT}/users`, newUser)
+      .map((response: Response) => {
+        // this is where the token will be pulled from the response
+        // const token = this.getTokenFromResponse(response);
+        const token = 'tempToken';
+        return token;
+      })
+      .catch((error: Response) => {
+        return Observable.throw(error);
+      });
   }
 
   updateUser() {
 
   }
 
-  ngOnInit(): void {
-
+  getToken() {
+    return window.localStorage.coffeeTimeToken;
   }
 
+  setToken(token: string) {
+    window.localStorage.vividCiphersToken = token;
+  }
+
+  private getTokenFromResponse(response: Response) {
+    // method to pull token from server response
+  }
 }

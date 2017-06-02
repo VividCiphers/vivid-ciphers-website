@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { NavigationHeaderComponent } from './shared/navigation-header/navigation-header.component';
 import { HeroBannerComponent } from './home-page/hero-banner/hero-banner.component';
 import { TeamComponent } from './home-page/team/team.component';
-import { TeamListingComponent } from './home-page/team-listing/team-listing.component';
+import { TeamListingComponent } from './home-page/team/team-listing/team-listing.component';
 import { SkillSetComponent } from './home-page/skill-set/skill-set.component';
 import { SkillListingComponent } from './home-page/skill-listing/skill-listing.component';
 import { ProjectSlideComponent } from './home-page/project-slide/project-slide.component';
