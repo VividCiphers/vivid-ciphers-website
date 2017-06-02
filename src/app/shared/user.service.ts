@@ -7,7 +7,7 @@ import { AppSettings } from "app/shared/AppSettings";
 import 'rxjs/Rx';
 
 @Injectable()
-export class UserService {
+export class UserService implements OnInit{
   private users: User[] = [];
 
   constructor(private http: Http) { }
@@ -28,10 +28,6 @@ export class UserService {
     return this.users;
   }
 
-  getUser() {
-
-  }
-
   createUser(userData) {
     const { email, password } = userData;
     const newUser = {
@@ -48,6 +44,18 @@ export class UserService {
       .catch((error: Response) => {
         return Observable.throw(error);
       });
+  }
+
+  getUser() {
+
+  }
+
+  updateUser() {
+
+  }
+
+  ngOnInit(): void {
+
   }
 
   updateUser() {
