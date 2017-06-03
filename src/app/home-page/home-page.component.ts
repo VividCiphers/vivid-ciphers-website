@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  loadingComponents = {
+    team: false,
+    skills: false,
+    projects: false,
+    newsletter: false,
+    contact: false
+  }
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  
 }

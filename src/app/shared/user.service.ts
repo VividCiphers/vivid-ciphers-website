@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { User } from './models/user.model';
 import { Http, Response } from "@angular/http";
 import { Observable } from 'rxjs/Observable';
@@ -8,25 +8,24 @@ import 'rxjs/Rx';
 
 @Injectable()
 export class UserService implements OnInit{
-  private users: User[] = [];
-
   constructor(private http: Http) { }
 
-  getUsersFromAPI() {
-    return this.http.get(`${AppSettings.API_ENDPOINT}/users`)
-      .map(response => response.json())
-      .map(response => response.users);
-  }
-
-  getAllUsers() {
-    this.getUsersFromAPI()
-      .subscribe((users) =>  {
-        users.forEach((user) => {
-          this.createUser(user);
-        });
-      });
-    return this.users;
-  }
+  //Return all users from the API.  
+  //We probably need to implement paging.
+  getAllUsers() : Observable<User[]> {
+       return this.http.get(`${AppSettings.API_ENDPOINT}/users`)
+        .map(response => response.json().users
+            .map((user) => {
+                let _user = new User({ 
+                  id: user.id,
+                  email: user.email,
+                  created_at: user.created_at,
+                  profile: user.profile,
+                  active: user.active
+            });
+              return _user;
+          }));
+}
 
   createUser(userData) {
     const { email, password } = userData;
@@ -50,9 +49,6 @@ export class UserService implements OnInit{
 
   }
 
-  updateUser() {
-
-  }
 
   ngOnInit(): void {
 
