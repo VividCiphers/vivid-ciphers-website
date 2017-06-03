@@ -10,8 +10,12 @@
             If you came here to learn, or interested in working with us - you came to the right place! Feel free to contact us.
           </p>
 
-            <div class="team-pictures col-xs-12 center-xs">
-                <team-listing [users]="users"></team-listing>
+            <div class="col-xs-12 center-xs" *ngIf="loading">
+              <p>Hang on, were loading our team.  Trust me, we're worth the wait...</p>
             </div>
+            <div class="team-pictures col-xs-12 center-xs"  >
+                <team-listing (loading)="loading = $event"></team-listing>
+            </div>
+           
         </div>
       </div>
