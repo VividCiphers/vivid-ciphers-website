@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { User } from "app/shared/models/user.model";
 import { UserService } from "app/shared/user.service";
-import { Observable } from "rxjs/Rx";
+import { User } from "app/shared/models/user.model";
 import { Role } from "app/shared/models/role.model";
+import { Observable } from "rxjs/Rx";
 
 @Component({
   selector: 'team-listing',
@@ -12,24 +12,23 @@ import { Role } from "app/shared/models/role.model";
 export class TeamListingComponent implements OnInit {
   @Output() loading = new EventEmitter<Boolean>();
 
-  users: User[];
-
+  private users: User[];
 
   constructor(private userService: UserService) { }
-
-
 
   ngOnInit() {
     this.loading.emit(true);
     this.userService.getAllUsers()
-      .subscribe((users: User[]) => {
-        this.loading.emit(false);
-        this.users = users
-      },
-      (err) => {
-        this.loading.emit(false);
-      },
-      () => this.loading.emit(false));
+      .subscribe(
+        (users: User[]) => {
+          this.loading.emit(false);
+          this.users = users
+        },
+        (err) => {
+          this.loading.emit(false);
+          console.error(`There was a problem getting users: ${err}`);
+        }
+      );
   }
 
 }

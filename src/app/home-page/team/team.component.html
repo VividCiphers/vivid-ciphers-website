@@ -1,21 +1,19 @@
-      <div class="team" id="team">
-        <div class="wrap-max1140px row middle-xs">
-          <h2 class="col-xs-12 center-xs">Team<span class='t-red'>_</span></h2>
-          <p class="p-intro col-xs-12 center-xs">Get to know our developers and what they do by meeting our team.</p>
-          <p class="col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-10 start-xs"><b class='extra-bold t-green'>Vivid Ciphers</b> is an organisation of web developers and designers.
-            Our developers constantly work on different sorts of projects, focusing on fullstack development, training and keeping their skills up to date.
-            Our designers participate in Daily UI challenges.</p>
-          <p class="col-sm-offset-0 col-sm-5 col-xs-offset-1 col-xs-10">
-            We also strengthen our skills by freelancing on well known freelance websites like <a href="#">upwork</a> , <a href="#">freelancer</a> and <a href="#">99designs</a>.
-            If you came here to learn, or interested in working with us - you came to the right place! Feel free to contact us.
-          </p>
-
-            <div class="col-xs-12 center-xs" *ngIf="loading">
-              <p>Hang on, were loading our team.  Trust me, we're worth the wait...</p>
-            </div>
-            <div class="team-pictures col-xs-12 center-xs"  >
-                <team-listing (loading)="loading = $event"></team-listing>
-            </div>
-           
-        </div>
-      </div>
+<div class="team" id="team">
+  <div class="wrap-max1140px row middle-xs">
+    <h2 class="col-xs-12 center-xs">Team<span class='t-red'>_</span></h2>
+    <p class="p-intro col-xs-12 center-xs">Get to know our developers and what they do by meeting our team.</p>
+    <p class="col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-10 start-xs"><b class='extra-bold t-green'>Vivid Ciphers</b> is an organisation of web developers and designers.
+      Our developers constantly work on different sorts of projects, focusing on fullstack development, training and keeping their skills up to date.
+      Our designers participate in Daily UI challenges.</p>
+    <p class="col-sm-offset-0 col-sm-5 col-xs-offset-1 col-xs-10">
+      We also strengthen our skills by freelancing on well known freelance websites like <a href="#">upwork</a> , <a href="#">freelancer</a> and <a href="#">99designs</a>.
+      If you came here to learn, or interested in working with us - you came to the right place! Feel free to contact us.
+    </p>
+    <div class="col-xs-12 center-xs" *ngIf="loading">
+      <p>Hang on, were loading our team.  Trust me, we're worth the wait...</p>
+    </div>
+    <div class="team-pictures col-xs-12 center-xs"  >
+      <team-listing (loading)="loading = $event"></team-listing>
+    </div>
+  </div>
+</div>
