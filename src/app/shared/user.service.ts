@@ -5,28 +5,34 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import { AppSettings } from "app/shared/AppSettings";
 import 'rxjs/Rx';
+import { Role } from "app/shared/models/role.model";
 
 @Injectable()
-export class UserService implements OnInit{
+export class UserService implements OnInit {
   constructor(private http: Http) { }
 
   //Return all users from the API.  
   //We probably need to implement paging.
-  getAllUsers() : Observable<User[]> {
-       return this.http.get(`${AppSettings.API_ENDPOINT}/users`)
-        .map(response => response.json().users
-            .map((user) => {
-                let _user = new User({ 
-                  id: user.id,
-                  email: user.email,
-                  created_at: user.created_at,
-                  profile: user.profile,
-                  active: user.active
-            });
-              return _user;
-          }));
-}
+  getAllUsers(): Observable<User[]> {
+    return this.http.get(`${AppSettings.API_ENDPOINT}/users`)
+      .map(response => response.json().users
+        .map((user) => {
+           return new User({
+            id: user.id,
+            email: user.email,
+            created_at: user.created_at,
+            profile: user.profile,
+            roles: user.roles.map((role) => { 
+              return new Role({ 
+                id: role.id,
+                role_name: role.role_name
+               })}),
+            active: user.active  
+          });
+        }));
+  }
 
+  
   createUser(userData) {
     const { email, password } = userData;
     const newUser = {
