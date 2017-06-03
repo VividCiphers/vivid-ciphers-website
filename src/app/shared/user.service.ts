@@ -17,19 +17,9 @@ export class UserService implements OnInit {
     return this.http.get(`${AppSettings.API_ENDPOINT}/users`)
       .map((response) => response.json().users
         .map((userData) => {
-          return this.addUser(userData);
+          return new User({ ...userData });
         })
       );
-  }
-
-  addUser(userData) {
-    const { id, email, created_at, profile, active } = userData;
-    const roles = userData.roles.map((roleData) => {
-      const { id, role_name } = roleData;
-      return new Role({ id, role_name });
-    });
-
-    return new User({ id, email, created_at, profile, active, roles });
   }
 
   createUser(userData) {
