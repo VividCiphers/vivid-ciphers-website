@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { UserService } from "app/shared/user.service";
-import { User } from "app/shared/models/user.model";
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'team',
@@ -8,10 +6,9 @@ import { User } from "app/shared/models/user.model";
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-  users: User[];
-  constructor(private userService: UserService) { }
-
-  ngOnInit() {
-    this.users = this.userService.getAllUsers();
+  loading: Boolean = false;
+  ngOnInit(): void {
   }
+
 }
+ 
