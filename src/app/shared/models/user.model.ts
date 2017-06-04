@@ -15,6 +15,6 @@ export class User {
     this.email = user && user.email || null;
     this.created_at = user.created_at || null;
     this.profile = user && user.profile || null;
-    this.roles = user && user.roles || [];
+    this.roles = user && user.roles.map((role) => {return new Role({...role});}) || [];
   }
 }
