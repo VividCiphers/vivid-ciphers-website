@@ -1,6 +1,6 @@
 import { UserService } from "../../app/shared/user.service";
 import { User } from '../shared/models/user.model';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 
@@ -10,11 +10,11 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./signup-page.component.css']
 })
 export class SignupPageComponent {
+  @Output() userExists = new EventEmitter<boolean>();
+  private newUser: User;
 
   constructor(private userService: UserService,
               private router: Router) { }
-
-  private newUser = {};
 
   onSubmit() {
     this.userService.createUser(this.newUser)
@@ -25,6 +25,7 @@ export class SignupPageComponent {
           this.router.navigate(['/']);
         },
         (error) => {
+          console.log(error);
           console.error(`There was a problem signing up: ${error}`);
         }
       );
