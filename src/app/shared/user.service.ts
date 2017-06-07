@@ -21,16 +21,15 @@ export class UserService implements OnInit {
         })
       );
   }
+  
 
-  createUser(userData) {
-    const { email, password } = userData;
-    const newUser = { email, password };
 
-    return this.http.post(`${AppSettings.API_ENDPOINT}/users`, newUser)
+  createUser(user: User) {
+    return this.http.post(`${AppSettings.API_ENDPOINT}/users`, {...user})
       .map((response: Response) => {
         // this is where the token will be pulled from the response
         // const token = this.getTokenFromResponse(response);
-        const token = 'tempToken';
+        let token = 'tempToken';
         return token;
       })
       .catch((error: Response) => {
