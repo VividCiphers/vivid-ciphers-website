@@ -1,24 +1,24 @@
-      <div class="slider">
-          <div class="bg-main"></div>
-          <div class="bg-additional-slider"></div>
-        <div class="wrap-max1140px row">
-          <div class="col-md-7 col-xs-12 center-xs slider-pic">
-            <img src="../assets/img/{{ currentSlide.pic }}" alt="Project Slide" >
-          </div>
-          <div class="col-md-5 col-xs-12 relative">
-            <div class="row">
-              <div class="col-md-12 start-md col-xs-12 slider-content">
-                <h3 class="t-white">{{ currentSlide.header }}</h3>
-                <div class="slider-text t-white">{{ currentSlide.content }}</div>
-                  <div class="row middle-xs start-md center-xs social-icons slider-buttons">
-                    <button class="b-red">Watch Live</button>
-                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  </div>
-                </div>
-                <div class="slider-dots col-xs-12 center-xs">
-                    <i  *ngFor="let slide of slides" class="fa fa-circle"></i>
-                </div>
-              </div>
+<div class="slider" *ngIf="currentSlide">
+  <div class="bg-main"></div>
+  <div class="bg-additional-slider"></div>
+  <div class="wrap-max1140px row">
+    <div class="col-md-7 col-xs-12 center-xs slider-pic">
+      <img src="../assets/img/{{ currentSlide.pic }}" alt="Project Slide">
+    </div>
+    <div class="col-md-5 col-xs-12 relative">
+      <div class="row">
+        <div class="col-md-12 start-md col-xs-12 slider-content">
+          <h3 class="t-white">{{ currentSlide.header }}</h3>
+          <div class="slider-text t-white">{{ currentSlide.content }}</div>
+          <div class="row middle-xs start-md center-xs social-icons slider-buttons">
+            <button class="b-red">Watch Live</button>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
           </div>
         </div>
+        <div class="slider-dots col-xs-12 center-xs">
+            <i class="fa fa-circle" *ngFor="let slide of slides" [ngClass]="{'active': currentSlide === slide}" (click)="setCurrentSlide(slide)"></i>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
