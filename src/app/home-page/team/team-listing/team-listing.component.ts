@@ -22,11 +22,18 @@ export class TeamListingComponent implements OnInit {
       .subscribe(
         (users: User[]) => {
           this.loading.emit(false);
-          this.users = users
+          this.users = users.filter((user: User) => {
+            if (user && user.profile && user.profile.image_path){ 
+              return user;
+            }
+          })
         },
         (err) => {
           this.loading.emit(false);
           console.error(`There was a problem getting users: ${err}`);
+        },
+        () => { 
+          console.log(this.users);
         }
       );
   }

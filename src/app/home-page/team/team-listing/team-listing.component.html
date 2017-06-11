@@ -1,11 +1,10 @@
-<div *ngIf="users" >
-  <div *ngFor="let user of users">
-    <img
-      *ngIf="user.profile && user.profile.image_path"
-      class="userpic"
-      src="../../assets/img/team/{{user.profile?.image_path}}"
-      alt="{{user.profile?.first_name}}"
-    >
-    <!--{{ user | json }}-->
+<div *ngFor="let user of users" class="row team-member">
+  <div class="col-lg-2 start-lg top-lg col-xs-12 center-xs">
+    <div class="image-box">
+      <img src="../../assets/img/team/{{user.profile.image_path}}" alt="{{user.profile.first_name}}"> {{ user.profile.first_name}}
+    </div>
+  </div>
+  <div class="col-lg-6 start-lg top-lg col-xs-12 center-xs">
+    <p> {{ user.profile.biography }}</p>
   </div>
 </div>
