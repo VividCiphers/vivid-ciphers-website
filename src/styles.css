@@ -292,6 +292,14 @@ header {
   background-color: #0aa1a8;
   transform: skewY(0.7deg); }
 
+.bg-secondary {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 70%;
+  background-color: #0aa1a8;
+  transform: skewY(-0.7deg); }
+
 .bg-additional, .bg-additional-slider {
   transform: skewY(-0.7deg) translateY(50%); }
 

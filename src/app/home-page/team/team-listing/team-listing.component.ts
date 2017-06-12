@@ -22,8 +22,8 @@ export class TeamListingComponent implements OnInit {
       .subscribe(
         (users: User[]) => {
           this.loading.emit(false);
-          this.users = users.filter((user: User) => {
-            if (user && user.profile && user.profile.image_path){ 
+          this.users = users.filter((user: User, index) => {
+            if (user && user.profile && user.profile.image_path && index < 4){ 
               return user;
             }
           })
