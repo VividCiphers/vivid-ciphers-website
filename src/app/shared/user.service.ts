@@ -21,10 +21,8 @@ export class UserService implements OnInit {
         })
       );
   }
-  
 
-
-  createUser(user: User) {
+  createUser(user: {}) {
     return this.http.post(`${AppSettings.API_ENDPOINT}/users`, {...user})
       .map((response: Response) => {
         // this is where the token will be pulled from the response
@@ -40,7 +38,6 @@ export class UserService implements OnInit {
   getUser() {
 
   }
-
 
   ngOnInit(): void {
 
