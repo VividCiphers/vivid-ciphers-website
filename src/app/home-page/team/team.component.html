@@ -1,18 +1,30 @@
-<div class="team" id="team">
-  <div class="wrap-max1140px row middle-xs">
-    <h2 class="col-xs-12 center-xs">Team<span class='t-red'>_</span></h2>
-    <p class="p-intro col-xs-12 center-xs">Get to know our developers and what they do by meeting our team.</p>
-    <p class="col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-10 start-xs"><b class='extra-bold t-green'>Vivid Ciphers</b> is an organisation of web developers and designers.
-      Our developers constantly work on different sorts of projects, focusing on fullstack development, training and keeping their skills up to date.
-      Our designers participate in Daily UI challenges.</p>
-    <p class="col-sm-offset-0 col-sm-5 col-xs-offset-1 col-xs-10">
-      We also strengthen our skills by freelancing on well known freelance websites like <a href="#">upwork</a> , <a href="#">freelancer</a> and <a href="#">99designs</a>.
-      If you came here to learn, or interested in working with us - you came to the right place! Feel free to contact us.
+<div class="team">
+  <div class="row">
+    <div class="col-xs-12 col-lg-6 col-lg-offset-1 ">
+      <h2 class="col-xs-12 center-xs">We are Learners<span class='t-red'>_</span></h2>
+      <p class="p-intro col-xs-12 center-xs">A diverse community of designers and coders from all walks of life.</p>
+      <div class="col-xs-offset-2 col-xs-8 center-lg">
+        <p></p>
+
+    <h2 class="col-xs-12 center-xs">The skills you need<span class='t-red'>_</span></h2>
+    <p class="p-intro col-xs-12 center-xs">Our team specializes in all things </p>
+    <p class="col-xs-offset-2 col-xs-8 center-lg"><b class='extra-bold t-green'>Our organisation</b> has a lot of people experienced in Computer Science and IT. We keep
+      learning and being up to date on skills allow us to work and teach you to code from scratch for as long as you're interested
+      in learning programming. We never give up and we do everything at the best level, writing clean code you can understand
+      and update. Along with having a play with algorithms, never stop learning and you'll be able to build awesome programms
+      or websites. Want to build a unique UI interface with amazing UX? Not a problem! We'll help you on it! Want to create
+      your own game? Perfect! We would be interested in creating one as well :)
+
     </p>
-    <div class="col-xs-12 center-xs" *ngIf="loading">
-      <p>Hang on, were loading our team.  Trust me, we're worth the wait...</p>
+      </div>
     </div>
-    <div class="team-pictures col-xs-12 center-xs"  >
+    <div class="col-xs-12 col-lg-5">
+      <h2 class="col-xs-12 center-xs start-lg">
+        Meet the Team<span class='t-red'>_</span>
+      </h2>
+      <div *ngIf="loading">
+        <p>Hang on, were loading our team. Trust me, we're worth the wait...</p>
+      </div>
       <team-listing (loading)="loading = $event"></team-listing>
     </div>
   </div>
