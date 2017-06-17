@@ -1,9 +1,23 @@
 .image-box { 
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     box-shadow: 5px 5px 5px #ccc;
     width: 100px;
     text-align: center;
     display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.image-box p { 
+    padding: 5px;
+}
+
+.image-box:hover { 
+    background-color: #e26868;
+    color: white;
+    box-shadow: none;
+    border: 1px solid #e26868;
+    transition: color .2s, background-color .2s, border .2s, box-shadow .2s;
 }
 
 p { 
@@ -14,4 +28,15 @@ p {
 
 .team-member {
     margin-bottom: 40px;
+}
+
+.text-line { 
+    margin-top: -10px;
+    width: 0%;
+}
+
+.row:hover div hr { 
+    width: 100%;
+    transition: width 1s;
+    background-color: #e26868;
 }
