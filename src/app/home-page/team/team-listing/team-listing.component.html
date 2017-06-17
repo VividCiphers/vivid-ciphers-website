@@ -1,10 +1,12 @@
 <div *ngFor="let user of users" class="row team-member">
   <div class="col-lg-2 start-lg top-lg col-xs-12 center-xs">
     <div class="image-box">
-      <img src="../../assets/img/team/{{user.profile.image_path}}" alt="{{user.profile.first_name}}"> {{ user.profile.first_name}}
+      <img src="../../assets/img/team/{{user.profile.image_path}}" alt="{{user.profile.first_name}}"> 
+      <p>{{ user.profile.first_name}}</p>
     </div>
   </div>
   <div class="col-lg-6 start-lg top-lg col-xs-12 center-xs">
+    <hr class="text-line">
     <p> {{ user.profile.biography }}</p>
   </div>
 </div>

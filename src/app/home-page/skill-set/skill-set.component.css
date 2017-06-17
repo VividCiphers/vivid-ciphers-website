@@ -1,11 +1,39 @@
 i {
     display: inline-block;
-    margin: 50px;
+    margin: 50px 50px 10px 50px;
     font-size: 3em; 
-    
     color: #d05f5f;
 }
-
 .skill-section {
     background-color: #e26868;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.skill-container {
+    display: inline-block;
+    height: 170px;
+}
+
+.skill-container p {
+    margin-top: -100px;
+    opacity: 0;
+    color: #0aa1a8;
+    font-weight: bold;
+}
+
+
+i:hover {
+    color: #0aa1a8;
+}
+
+i:hover + p {
+    opacity: 1;
+    margin-top: 0;
+    transition: opacity 1s, margin .5s;
+}
+
+
+.skill-list {
+    background-color: #fff
 }

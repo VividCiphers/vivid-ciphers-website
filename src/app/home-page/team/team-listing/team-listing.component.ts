@@ -23,7 +23,7 @@ export class TeamListingComponent implements OnInit {
         (users: User[]) => {
           this.loading.emit(false);
           this.users = users.filter((user: User, index) => {
-            if (user && user.profile && user.profile.image_path && index < 4){ 
+            if (user && user.profile && user.profile.image_path){ 
               return user;
             }
           })

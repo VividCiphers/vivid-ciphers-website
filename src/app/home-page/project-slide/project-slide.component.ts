@@ -41,7 +41,7 @@ export class ProjectSlideComponent implements OnInit, AfterViewInit {
     if (!this.currentSlide) {
       setTimeout(() => {
         this.currentSlide = this.slides[0];
-      }, 500);
+      }, 700);
     }
   }
 
