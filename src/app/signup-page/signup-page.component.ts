@@ -11,7 +11,7 @@ import { NgForm } from '@angular/forms';
 })
 export class SignupPageComponent {
   @Output() userExists = new EventEmitter<boolean>();
-  private newUser: User;
+  private newUser = {};
 
   constructor(private userService: UserService,
               private router: Router) { }
