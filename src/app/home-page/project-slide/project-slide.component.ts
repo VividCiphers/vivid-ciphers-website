@@ -11,23 +11,16 @@ export class ProjectSlideComponent implements OnInit, AfterViewInit {
 
   slides = [{
     "id": 1,
-    "pic": "project-slide-1.png",
-    "header": "Slide 1",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo. Lorem ipsum dolor sit amet, Ladipisicing elit, incididunt ut labore et dolore magna aliqua. Ladipisicing elit.Lorem ipsum dolor sit amet, sed do. Ladipisicing elit.",
+    "pic": "vc-slide.png",
+    "header": "Vivid Ciphers Website",
+    "content": "We're excited to feature as our first project the Vivid Ciphers website.  This website was developer by various members of the team, at first using SASS, Vanilla Javascript, and HTML. Eventually we re-worked the project to use a laravel REST API and an angular front end.",
     "watch": "#",
     "git": "#"
   }, {
     "id": 2,
     "pic": "project-slide-2.png",
-    "header": "Slide 2",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "watch": "#",
-    "git": "#"
-  }, {
-    "id": 3,
-    "pic": "project-slide-3.png",
-    "header": "Slide 3",
-    "content": "Lorem ipsum dolor sit amet.",
+    "header": "Social Network Project",
+    "content": "Our 2nd project will be a fully functional social networking site written in nodejs and react. Subscribe below for more information!",
     "watch": "#",
     "git": "#"
   }];
