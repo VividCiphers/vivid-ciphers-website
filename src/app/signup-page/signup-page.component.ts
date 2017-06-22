@@ -11,13 +11,14 @@ import { NgForm } from '@angular/forms';
 })
 export class SignupPageComponent {
   @Output() userExists = new EventEmitter<boolean>();
-  private newUser = {};
+  user: User;
+  passwordConfirm: string;
 
   constructor(private userService: UserService,
               private router: Router) { }
 
   onSubmit() {
-    this.userService.createUser(this.newUser)
+    this.userService.createUser(this.user)
       .subscribe(
         (response) => {
           const token: string = response;

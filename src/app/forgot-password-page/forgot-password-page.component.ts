@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { User } from "app/shared/models/user.model";
 
 @Component({
   selector: 'app-forgot-password-page',
@@ -9,7 +10,7 @@ import { NgForm } from '@angular/forms';
 export class ForgotPasswordPageComponent {
   // Eventually this will be a new instance of the user model.
   // newUser: User = new User();
-  user = {};
+  user: User;
 
   onSubmit(form: NgForm) {
     console.log(this.user);

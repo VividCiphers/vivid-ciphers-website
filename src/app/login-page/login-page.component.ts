@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { User } from "app/shared/models/user.model";
 
 @Component({
   selector: 'app-login-page',
@@ -7,10 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent implements OnInit {
-
-  // Eventually this will be a new instance of the user model.
-  // user: User = new User();
-  user = {};
+user: User;
 
   onSubmit() {
     console.log(this.user);

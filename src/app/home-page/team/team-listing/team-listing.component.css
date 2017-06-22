@@ -1,6 +1,9 @@
+.images { 
+    min-width: 120px;
+}
 .image-box { 
     border: 1px solid #fff;
-    box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 2px 2px 10px #555555;
     width: 100px;
     text-align: center;
     display: inline-block;
