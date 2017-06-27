@@ -22,6 +22,7 @@ import { ForgotPasswordPageComponent } from './forgot-password-page/forgot-passw
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { UserService } from "app/shared/user.service";
 import { LoginPageComponent } from './login-page/login-page.component';
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 
 const routes: Routes = [
@@ -57,7 +58,8 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    Ng2PageScrollModule.forRoot()
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
