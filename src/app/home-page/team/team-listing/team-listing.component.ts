@@ -12,7 +12,7 @@ import { Observable } from "rxjs/Rx";
 export class TeamListingComponent implements OnInit {
   @Output() loading = new EventEmitter<Boolean>();
 
-  private users: User[];
+  public users: User[];
 
   constructor(private userService: UserService) { }
 

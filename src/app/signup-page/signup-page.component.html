@@ -17,15 +17,15 @@
       <p class="p-intro">Create an account</p>
   </div>
   <form
-    (ngSubmit)="onSubmit(signUpForm)"
+    (ngSubmit)="onSubmit()"
     #signUpForm="ngForm">
       <input
         type="text"
         style="text-align: center"
         placeholder="Nickname"
-        name="login"
+        name="name"
         ngNativeValidate
-        [(ngModel)] = "newUser.login"
+        [(ngModel)] = "user.profile.first_name"
         required>
       <input
         type="email"
@@ -33,7 +33,7 @@
         placeholder="Email"
         name="email"
         ngNativeValidate
-        [(ngModel)] = "newUser.email"
+        [(ngModel)] = "user.email"
         required
         email>
       <input
@@ -43,7 +43,7 @@
         name="password"
         minlength="8"
         ngNativeValidate
-        [(ngModel)] = "newUser.password"
+        [(ngModel)] = "user.password"
         required
         password>
       <input
@@ -53,7 +53,7 @@
         name="passwordConfirm"
         minlength="8"
         ngNativeValidate
-        [(ngModel)] = "newUser.passwordConfirm"
+        [(ngModel)] = "passwordConfirm"
         required
         password>
     <div class="row middle-xs between-xs wrap-height100px">
