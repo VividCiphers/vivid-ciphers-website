@@ -20,13 +20,7 @@ constructor(private route: ActivatedRoute) {
 }
 
   ngOnInit() {
-    this.route.fragment.subscribe(f => {
-      let element = null;
-      if (f)
-        element = document.querySelector("#" + f)
-      if (element) 
-        element.scrollIntoView(element)
-    })
+  
   }
   
   componentAdded($event){
