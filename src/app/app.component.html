@@ -1,1 +1,3 @@
-<router-outlet></router-outlet>
+<app-navigation-header></app-navigation-header>
+<hero-banner [title]="currentTitle" [tagline]="currentTagline"></hero-banner>
+<router-outlet (activate)="componentAdded($event)"></router-outlet>

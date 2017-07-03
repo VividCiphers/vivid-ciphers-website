@@ -3,6 +3,7 @@ import { User } from '../shared/models/user.model';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { Profile } from "app/shared/models/profile.model";
 
 @Component({
   selector: 'app-signup-page',
@@ -15,7 +16,10 @@ export class SignupPageComponent {
   passwordConfirm: string;
 
   constructor(private userService: UserService,
-              private router: Router) { }
+              private router: Router) {
+                this.user = new User();
+                this.user.profile = new Profile();
+               }
 
   onSubmit() {
     this.userService.createUser(this.user)

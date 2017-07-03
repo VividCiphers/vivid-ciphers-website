@@ -27,11 +27,15 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
-  {path:'home', component: HomePageComponent},
-  {path:'about', component: AboutPageComponent},
-  {path:'password-reset', component: ForgotPasswordPageComponent},
-  {path:'register', component: SignupPageComponent},
-  {path:'login', component: LoginPageComponent}
+  {
+    path:'home', 
+    data: {title: "You dream it. We build it", tagline: "Jumpstart your next dream project with an all-star crew of developers passionate about learning and coding."}, 
+    component: HomePageComponent
+  },
+  {path:'about', data: {title: "You dream it. We build it", tagline: "Jumpstart your next dream project with an all-star crew of developers passionate about learning and coding."}, component: HomePageComponent},
+  {path:'password-reset', data: {title: "You dream it. We build it", tagline: "Jumpstart your next dream project with an all-star crew of developers passionate about learning and coding."},  component: ForgotPasswordPageComponent},
+  {path:'register', data: {title: "You dream it. We build it", tagline: "Jumpstart your next dream project with an all-star crew of developers passionate about learning and coding."},  component: SignupPageComponent},
+  {path:'login', data: { title: 'Sign up now!', tagline: 'Login now to get started.' },  component: LoginPageComponent}
 ];
 
 @NgModule({
